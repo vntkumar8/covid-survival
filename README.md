@@ -10,3 +10,6 @@ Survival Analysis of COVID Data
 
 - Legends in survival file:
 H [implying they were hospitalized on that day], C [Cured], D [Deceased], ICU [required an ICU], ICUO [ICU and required Oxygen] or ICUV [ICU and required Ventilator support].
+
+
+1--censored/alive;2--dead
