@@ -1,0 +1,58 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Bland and Altman(2004)}]{bland2004logrank}
+Bland, J.~M.; and Altman, D.~G. 2004.
+\newblock The logrank test.
+\newblock \emph{Bmj} 328(7447): 1073.
+
+\bibitem[{Clark et~al.(2003)Clark, Bradburn, Love, and
+  Altman}]{clark2003survival}
+Clark, T.~G.; Bradburn, M.~J.; Love, S.~B.; and Altman, D.~G. 2003.
+\newblock Survival analysis part I: basic concepts and first analyses.
+\newblock \emph{British journal of cancer} 89(2): 232--238.
+
+\bibitem[{COVID-19 India Org Data
+  Operations~Group(2020)}]{covid19indiaorg2020tracker}
+COVID-19 India Org Data Operations~Group, . 2020.
+\newblock COVID-19 India Tracker.
+\newblock Accessed on 2020-25-11 from \url{https://api.covid19india.org/}.
+
+\bibitem[{Ioannidis, Cripps, and Tanner(2020)}]{ioannidis2020forecasting}
+Ioannidis, J.~P.; Cripps, S.; and Tanner, M.~A. 2020.
+\newblock Forecasting for COVID-19 has failed.
+\newblock \emph{International journal of forecasting} .
+
+\bibitem[{Kaplan and Meier(1958)}]{kaplan1958nonparametric}
+Kaplan, E.~L.; and Meier, P. 1958.
+\newblock Nonparametric estimation from incomplete observations.
+\newblock \emph{Journal of the American statistical association} 53(282):
+  457--481.
+
+\bibitem[{Mishra et~al.(2020)Mishra, Burma, Das, Parivallal, Amudhan, Rao
+  et~al.}]{mishra2020covid}
+Mishra, V.; Burma, A.~D.; Das, S.~K.; Parivallal, M.~B.; Amudhan, S.; Rao,
+  G.~N.; et~al. 2020.
+\newblock COVID-19-Hospitalized Patients in Karnataka: Survival and Stay
+  Characteristics.
+\newblock \emph{Indian Journal of Public Health} 64(6): 221.
+
+\bibitem[{Pocock, Clayton, and Altman(2002)}]{pocock2002survival}
+Pocock, S.~J.; Clayton, T.~C.; and Altman, D.~G. 2002.
+\newblock Survival plots of time-to-event outcomes in clinical trials: good
+  practice and pitfalls.
+\newblock \emph{The Lancet} 359(9318): 1686--1689.
+
+\bibitem[{Siva~Athreya and Mishra(2020)}]{AGM-2020}
+Siva~Athreya, N.~G.; and Mishra, A. 2020.
+\newblock COVID-19 India-Timeline an understanding across States and Union
+  Territories.
+\newblock Ongoing Study at \url{http://www.isibang.ac.in/~athreya/incovid19}.
+
+\end{thebibliography}
