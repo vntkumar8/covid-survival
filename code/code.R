@@ -33,10 +33,15 @@ ggsurvplot(fit,
            pval = TRUE, conf.int = TRUE,
            risk.table = F, # Add risk table
            risk.table.col = "strata", # Change risk table color by groups
+           xlab = "Time in days",   # customize X axis label.
+           break.time.by = 5,     # break X axis in time intervals by 200.
            linetype = "strata", # Change line type by groups
            surv.median.line = "hv", # Specify median survival
            ggtheme = theme_bw(), # Change ggplot2 theme
-           palette = c("#E7B800", "#2E9FDF"),
+           #palette = c("#E7B800", "#2E9FDF"),
+           palette=c("#49fc03","#fc9803","#fc1803","#033dfc","#ba03fc","#ffa600"),
+           legend.labs = 
+             c("Female <18yr","Female 18yr-60yr","Female >60yr","Male <18yr","Male 18yr-60yr","Male >60yr"),
            data=data
            )
 
@@ -87,24 +92,4 @@ surv_diff <- survdiff(Surv(Stay,Status) ~Sex, data = data)
 surv_diff
 
 
-
-#==================complex models
-library("rpart")
-fit <- rpart(Status ~ Age +Stay + Sex,
-             method="class", data=data)
-
-printcp(fit) # display the results
-plotcp(fit) # visualize cross-validation results
-summary(fit) # detailed summary of splits
-
-# plot tree
-plot(fit, uniform=TRUE,
-     main="Classification Tree for Kyphosis")
-text(fit, use.n=TRUE, all=TRUE, cex=.8)
-pfit<- prune(fit, cp=   fit$cptable[which.min(fit$cptable[,"xerror"]),"CP"])
-rpart.plot(fit)
-# plot the pruned tree
-plot(pfit, uniform=TRUE,
-     main="Pruned Classification Tree for Kyphosis")
-text(pfit, use.n=TRUE, all=TRUE, cex=.8)
 
